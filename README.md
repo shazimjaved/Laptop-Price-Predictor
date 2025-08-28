@@ -1,6 +1,6 @@
 💻 Laptop Price Prediction App
 
-A Streamlit web app that predicts laptop prices based on hardware configurations using a pre-trained machine learning pipeline.
+A Streamlit web app that predicts laptop prices based on Data Trainings using a Random Forest machine learning Algorithm with ~88% Accuracy.
 
 
 ## 📸 Demo
