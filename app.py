@@ -70,7 +70,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-if st.button('Predict Price 🚀')::
+if st.button('Predict Price 🚀'):
     # query
     ppi = None
     if touchscreen == 'Yes':
