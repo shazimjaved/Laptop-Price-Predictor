@@ -49,17 +49,20 @@ os = st.selectbox('OS',df['os'].unique())
 st.markdown("""
 <style>
 .stButton > button {
-    width: 100%;
-    height: 60px;
-    font-size: 24px;
+    width: 120%;
+    height: 80px;
+    font-size: 28px;
     font-weight: bold;
     background-color: #ff4444;
     color: white;
     border: none;
-    border-radius: 10px;
-    margin: 20px 0;
+    border-radius: 15px;
+    margin: 30px -10%;
+    padding: 20px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    position: relative;
+    left: -10%;
 }
 
 .stButton > button:hover {
