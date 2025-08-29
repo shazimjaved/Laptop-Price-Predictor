@@ -44,35 +44,6 @@ ssd = st.selectbox('SSD(in GB)',[0,8,128,256,512,1024])
 gpu = st.selectbox('GPU',df['Gpu brand'].unique())
 
 os = st.selectbox('OS',df['os'].unique())
-
-# Custom CSS for button styling
-st.markdown("""
-<style>
-.stButton > button {
-    width: 120%;
-    height: 80px;
-    font-size: 28px;
-    font-weight: bold;
-    background-color: #ff4444;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    margin: 30px -10%;
-    padding: 20px;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    position: relative;
-    left: -10%;
-}
-
-.stButton > button:hover {
-    background-color: #ff6666;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-}
-</style>
-""", unsafe_allow_html=True)
-
 if st.button('Predict Price 🚀'):
     # query
     ppi = None
