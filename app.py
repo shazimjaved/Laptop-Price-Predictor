@@ -6,7 +6,7 @@ import numpy as np
 pipe = pickle.load(open('pipe.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
 
-st.title("Laptop Price Prediction Model")
+st.title("💻Laptop Price Prediction Model")
 
 st.markdown("Made with &hearts; By Shazim Javed")
 
