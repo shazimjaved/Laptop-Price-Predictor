@@ -45,7 +45,32 @@ gpu = st.selectbox('GPU',df['Gpu brand'].unique())
 
 os = st.selectbox('OS',df['os'].unique())
 
-if st.button('Predict Price'):
+# Custom CSS for button styling
+st.markdown("""
+<style>
+.stButton > button {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.stButton > button:hover {
+    background-color: #ff6666;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+</style>
+""", unsafe_allow_html=True)
+
+if st.button('Predict Price 🚀')::
     # query
     ppi = None
     if touchscreen == 'Yes':
@@ -66,4 +91,4 @@ if st.button('Predict Price'):
     query = query.reshape(1,12)
     predicted_price = int(np.exp(pipe.predict(query)[0]))
     formatted_price = "{:,}".format(predicted_price)
-    st.success(f"💰 **Predicted Price: Rs. {formatted_price}")
+    st.success(f"💰 The Predicted Price is: Rs. {formatted_price}")
