@@ -2,6 +2,7 @@
 
 A Streamlit web app that predicts laptop prices based on Data Trainings using a Random Forest machine learning Algorithm with ~88% Accuracy.
 
+View live at:https://laptop-price-predictor-shazim.streamlit.app
 
 ## 📸 Demo
 Here’s a quick look at the app in action:
