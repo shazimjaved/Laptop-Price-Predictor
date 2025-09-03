@@ -44,7 +44,7 @@ ssd = st.selectbox('SSD(in GB)',[0,8,128,256,512,1024])
 gpu = st.selectbox('GPU',df['Gpu brand'].unique())
 
 os = st.selectbox('OS',df['os'].unique())
-if st.button('Predict Price 🚀'):
+if st.button('Predict Price 🚀',type='primary',use_container_width=True):
     # query
     ppi = None
     if touchscreen == 'Yes':
