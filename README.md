@@ -79,7 +79,7 @@ Pickle (Model serialization)
 
 📜 License
 
-This project is made for Educational/Learning Purpose only
+This project is Licensed Under MIT license 🪪
 .
 
 ✨ Made with ♥ by Shazim Javed
